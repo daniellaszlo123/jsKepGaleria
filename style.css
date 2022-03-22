@@ -36,6 +36,16 @@ article img{
     border: 1px solid black;
     border-radius: 10px;
 }
-footer div{
+section div{
     width: 32%;
+}
+
+section img {
+    width: 100%;
+}
+
+.kepekformazasa{
+    border: 2px solid green;
+    padding: 10px;
+    background-color: pink;
 }
