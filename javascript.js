@@ -1,13 +1,16 @@
 window.addEventListener("load", init);
 
-
+/*rövidítések*/{
 function ID(elem) {
     return document.getElementById(elem);
 }
 function CLASS(elem) {
     return document.getElementsByClassName(elem);
 }
-
+function $(elem) {
+    return document.querySelectorAll(elem);
+}
+}
 
 var kepeim = [{
     eleres: "kepek/kep01.jpg",
@@ -48,7 +51,11 @@ function galeria(){
         ID(index).addEventListener("click", kepKivalasztas)
         CLASS("kep")[index].style.border="5px solid red";
         CLASS("kep")[index].className+=" kepekformazasa";
+        $("#inp img")[index].style.borderRadius="50px";
     }
+
+    document.querySelector(".kepek img").style.borderRadius="50px";
+
 }
 
 function kepKivalasztas() {
